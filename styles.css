@@ -16,8 +16,8 @@ body{
 }
 
 h1{
-	font-size: 2rem;
-	text-shadow: 0 2px 3px rgba(0,0,0,.75);
+	font-size: 2.5rem;
+	text-shadow: 0 2px 3px black;
     color: white;
 	position: relative;
 	top: 4rem;
@@ -37,10 +37,11 @@ h1{
 	max-height: 480px;
 	width: 100vw;
 	height: 100vw;
-	box-shadow: 0 10px 10px -5px rgba(0,0,0,.75);
+	box-shadow: 0 10px 10px -5px black;
 	font-size: 0;
 	position: relative;
-	
+	background-image: url(https://media.istockphoto.com/photos/abstract-background-of-polygons-on-white-background-picture-id945690394?k=20&m=945690394&s=612x612&w=0&h=1bHbsRS-HF0gAHH2gFEtN1Ikhl_ymZ2J3wCJLOj5F_c=);
+	background-size: cover;
 }
 .box{
 	width: 12.5%;
@@ -53,7 +54,7 @@ h1{
 }
 
 .box:nth-child(n+1):nth-child(-n+16){
-	color: whitesmoke;
+	color: EEB68B;
 }
 .box:nth-child(n+41):nth-child(-n+64){
 	color: black;
@@ -74,7 +75,7 @@ h1{
 @media screen and (min-width: 480px){
 	.board {
 		border: 18px solid transparent;
-		box-shadow: 0 15px 15px -5px rgba(0,0,0,.75);
+		box-shadow: 0 15px 15px -5px black;
 	}
 	.box {
 		font-size: 2.5rem;
