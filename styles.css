@@ -8,13 +8,17 @@ body{
 	font-family: Verdana, sans-serif;
 	font-size: 16px;
 	text-align: center;
-	background-image: url(https://www.msc.org/images/default-source/msc-english/content-banner/content-hero-images-1920px-x-1080px/rs14483_istock-104669275-ocean-wave-breaking.jpg?sfvrsn=9c452f0_11);
+	background-image: url(https://images5.alphacoders.com/619/619510.jpg);
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover contain;
+	background-position: center;
 }
 
 h1{
 	font-size: 1.5rem;
 	text-shadow: 0 2px 3px rgba(0,0,0,.75);
-    color: black;
+    color: white;
 }
 
 .board{
@@ -26,27 +30,33 @@ h1{
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
-	border: 4vw solid transparent;
-	border-image: url("https://preview.pixlr.com/images/800wm/1349/2/1349101045.jpg") 50 stretch;
+	border: 13px solid transparent;
 	max-width: 480px;
 	max-height: 480px;
 	width: 100vw;
 	height: 100vw;
 	box-shadow: 0 10px 10px -5px rgba(0,0,0,.75);
 	font-size: 0;
-	background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20210708/pngtree-abstract-creative-texture-blue-cyan-marble-wallpaper-image_736858.jpg");
 }
 
 .box{
 	width: 12.5%;
 	height: 12.5%;
 	font-size: 8vw;
+	display: block;
+	text-align: center;
 	line-height: 12vw;
+	padding-top: 4px;
+
 }
 
 .box:nth-child(n+1):nth-child(-n+16){
 	color: white;
 }
+.box:nth-child(n+41):nth-child(-n+64){
+	color: black;
+}
+
 
 .board .box:nth-child(n+1):nth-child(-n+8):nth-child(even),
 .board .box:nth-child(n+17):nth-child(-n+25):nth-child(even),
@@ -60,13 +70,12 @@ h1{
 }
 
 @media screen and (min-width: 480px){
-	.board{
+	.board {
 		border: 18px solid transparent;
-		border-image: url("http://allroundnews.com/wp-content/uploads/2012/02/seamless-wood-texture-free-6.jpg") 50 stretch;
 		box-shadow: 0 15px 15px -5px rgba(0,0,0,.75);
 	}
-	.box{
+	.box {
 		font-size: 2.5rem;
 		line-height: 56px;
-}
+	}	
 }
