@@ -5,7 +5,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-family: Verdana, sans-serif;
+	font-family: 'Permanent Marker', cursive;
 	font-size: 16px;
 	text-align: center;
 	background-image: url(https://images5.alphacoders.com/619/619510.jpg);
@@ -16,14 +16,16 @@ body{
 }
 
 h1{
-	font-size: 1.5rem;
+	font-size: 2rem;
 	text-shadow: 0 2px 3px rgba(0,0,0,.75);
     color: white;
+	position: relative;
+	top: 4rem;
 }
 
 .board{
 	position: relative;
-	top: 0;
+	top: 5rem;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -37,8 +39,9 @@ h1{
 	height: 100vw;
 	box-shadow: 0 10px 10px -5px rgba(0,0,0,.75);
 	font-size: 0;
+	position: relative;
+	
 }
-
 .box{
 	width: 12.5%;
 	height: 12.5%;
@@ -47,11 +50,10 @@ h1{
 	text-align: center;
 	line-height: 12vw;
 	padding-top: 4px;
-
 }
 
 .box:nth-child(n+1):nth-child(-n+16){
-	color: white;
+	color: whitesmoke;
 }
 .box:nth-child(n+41):nth-child(-n+64){
 	color: black;
