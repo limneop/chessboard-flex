@@ -1,15 +1,23 @@
 *{
 	box-sizing: border-box;
 }
-
+html { 
+	background: url(https://images5.alphacoders.com/619/619510.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
 body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Permanent Marker', cursive;
 	font-size: 16px;
 	text-align: center;
-	background-image: url(https://images5.alphacoders.com/619/619510.jpg);
-	width: 100%;
+	margin: 0;
+ 	height: 100%;
+  	width: 100%;
+  	overflow: hidden;
 	background-repeat: no-repeat;
 	background-size: cover contain;
 	background-position: center;
@@ -40,7 +48,7 @@ h1{
 	box-shadow: 0 10px 10px -5px black;
 	font-size: 0;
 	position: relative;
-	background-image: url(https://media.istockphoto.com/photos/abstract-background-of-polygons-on-white-background-picture-id945690394?k=20&m=945690394&s=612x612&w=0&h=1bHbsRS-HF0gAHH2gFEtN1Ikhl_ymZ2J3wCJLOj5F_c=);
+	background-image: url();
 	background-size: cover;
 }
 .box{
@@ -53,11 +61,196 @@ h1{
 	padding-top: 4px;
 }
 
+#move1 {
+	animation-name: pawn1move;
+	animation-duration: 3s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+@keyframes pawn1move {
+	from {
+	position: relative;
+	top: 0rem;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	}
+	to {
+	position: relative;
+	top: 6.7rem;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	}
+}
+
+#move2 {
+	animation-name: pawn2move;
+	animation-duration: 3s;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+@keyframes pawn2move {
+	from {
+	position: relative;
+	top: 0rem;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	}
+	to {
+	position: relative;
+	top: -6.6rem;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	}
+}
+
+#move5 {
+	animation-name: pawn5move;
+	animation-duration: 3s;
+	animation-delay: 8s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear reverse;
+}
+@keyframes pawn5move {
+	from {
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform: translate(0, 0);
+	}
+	to {
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform: translate(300%, 170px);
+	}
+}
+
+
+#move4 {
+	animation-name: pawn4move;
+	animation-duration: 3s;
+	animation-delay: 11s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+@keyframes pawn4move {
+	from {
+	position: relative;
+	top: 0rem;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	}
+	to {
+	position: relative;
+	top: -3.3rem;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	}
+}
+
+#move3 {
+	animation-name: pawn3move;
+	animation-duration: 14s;
+	animation-delay: 14s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear reverse;
+}
+@keyframes pawn3move {
+	0% {
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform: translate(0, 0);
+	}
+	50% {
+	position: relative;
+	top: 0rem;
+	right: 0rem;
+	bottom: 0;
+	left: 0;
+	transform: translate(-200%, 115px);
+	}
+	100% {
+	position: relative;
+	top: 19.8rem;
+	right: 0rem;
+	bottom: 0;
+	left: -6.5rem;
+	transform: translate(0, 0);
+	background: transparent;
+	}
+}
+
+#move6 {
+	animation-name: pawn6move;
+	animation-duration: 2s;
+	animation-delay: 19s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+@keyframes pawn6move {
+	from {
+	position: relative;
+	top: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	left: 0rem;
+	}
+	to {
+	position: relative;
+	top: -6.3rem;
+	right: 0;
+	bottom: 0rem;
+	left: -3.3rem;
+	background: none;
+	}
+}
+
+#move7 {
+	animation-name: pawn7move;
+	animation-duration: 1s;
+	animation-delay: 24s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+@keyframes pawn7move {
+	from {
+	position: relative;
+	top: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	left: 0rem;
+	}
+	to {
+	position: relative;
+	top: 0rem;
+	right: 0;
+	bottom: 0rem;
+	left: 0rem;
+	background: none;
+	visibility: hidden;
+	}
+}
+
 .box:nth-child(n+1):nth-child(-n+16){
-	color: EEB68B;
+	color: snow;
 }
 .box:nth-child(n+41):nth-child(-n+64){
-	color: black;
+	color: E43A1D;
 }
 
 
