@@ -63,7 +63,7 @@ h1{
 
 #move1 {
 	animation-name: pawn1move;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-delay: 2s;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
@@ -87,7 +87,7 @@ h1{
 
 #move2 {
 	animation-name: pawn2move;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-delay: 5s;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
@@ -102,7 +102,7 @@ h1{
 	}
 	to {
 	position: relative;
-	top: -6.6rem;
+	top: -6.5rem;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -111,7 +111,7 @@ h1{
 
 #move5 {
 	animation-name: pawn5move;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-delay: 8s;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear reverse;
@@ -138,7 +138,7 @@ h1{
 
 #move4 {
 	animation-name: pawn4move;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-delay: 11s;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
@@ -162,7 +162,7 @@ h1{
 
 #move3 {
 	animation-name: pawn3move;
-	animation-duration: 14s;
+	animation-duration: 10s;
 	animation-delay: 14s;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear reverse;
@@ -197,8 +197,8 @@ h1{
 
 #move6 {
 	animation-name: pawn6move;
-	animation-duration: 2s;
-	animation-delay: 19s;
+	animation-duration: 1s;
+	animation-delay: 18s;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
 }
@@ -209,13 +209,15 @@ h1{
 	right: 0rem;
 	bottom: 0rem;
 	left: 0rem;
+	transform: translate(0, 0);
 	}
 	to {
 	position: relative;
-	top: -6.3rem;
+	top: -3.3rem;
 	right: 0;
 	bottom: 0rem;
-	left: -3.3rem;
+	left: 0;
+	transform: translate(112px, -100%);
 	background: none;
 	}
 }
@@ -223,7 +225,7 @@ h1{
 #move7 {
 	animation-name: pawn7move;
 	animation-duration: 1s;
-	animation-delay: 24s;
+	animation-delay: 21s;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
 }
@@ -241,7 +243,6 @@ h1{
 	right: 0;
 	bottom: 0rem;
 	left: 0rem;
-	background: none;
 	visibility: hidden;
 	}
 }
@@ -250,16 +251,16 @@ h1{
 	color: snow;
 }
 .box:nth-child(n+41):nth-child(-n+64){
-	color: E43A1D;
+	color: 29100E;
 }
 
 
 .board .box:nth-child(n+1):nth-child(-n+8):nth-child(even),
+.board .box:nth-child(n+9):nth-child(-n+16):nth-child(odd),
 .board .box:nth-child(n+17):nth-child(-n+25):nth-child(even),
+.board .box:nth-child(n+25):nth-child(-n+32):nth-child(odd),
 .board .box:nth-child(n+33):nth-child(-n+40):nth-child(even),
 .board .box:nth-child(n+49):nth-child(-n+56):nth-child(even),
-.board .box:nth-child(n+9):nth-child(-n+16):nth-child(odd),
-.board .box:nth-child(n+25):nth-child(-n+32):nth-child(odd),
 .board .box:nth-child(n+41):nth-child(-n+48):nth-child(odd),
 .board .box:nth-child(n+57):nth-child(-n+64):nth-child(odd){
 	background-color: gray;
