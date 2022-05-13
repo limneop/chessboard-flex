@@ -17,7 +17,7 @@ body{
 	margin: 0;
  	height: 100%;
   	width: 100%;
-  	overflow: hidden;
+  	overflow: scroll;
 	background-repeat: no-repeat;
 	background-size: cover contain;
 	background-position: center;
@@ -43,8 +43,8 @@ h1{
 	border: 13px solid transparent;
 	max-width: 480px;
 	max-height: 480px;
-	width: 100vw;
-	height: 100vw;
+	width: 480px;
+	height: 480px;
 	box-shadow: 0 10px 10px -5px black;
 	font-size: 0;
 	position: relative;
@@ -54,10 +54,9 @@ h1{
 .box{
 	width: 12.5%;
 	height: 12.5%;
-	font-size: 8vw;
+	font-size: 2.8rem;
 	display: block;
 	text-align: center;
-	line-height: 12vw;
 	padding-top: 4px;
 }
 
@@ -102,7 +101,7 @@ h1{
 	}
 	to {
 	position: relative;
-	top: -6.5rem;
+	top: -6.6rem;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -186,14 +185,14 @@ h1{
 	}
 	100% {
 	position: relative;
-	top: 19.8rem;
+	top: 20rem;
 	right: 0rem;
 	bottom: 0;
-	left: -6.5rem;
+	left: -6.708rem;
 	transform: translate(0, 0);
 	background: transparent;
 	}
-}
+}	
 
 #move6 {
 	animation-name: pawn6move;
@@ -213,7 +212,7 @@ h1{
 	}
 	to {
 	position: relative;
-	top: -3.3rem;
+	top: -3.2rem;
 	right: 0;
 	bottom: 0rem;
 	left: 0;
