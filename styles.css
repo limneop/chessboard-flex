@@ -14,13 +14,7 @@ body{
 	font-family: 'Permanent Marker', cursive;
 	font-size: 16px;
 	text-align: center;
-	margin: 0;
- 	height: 100%;
-  	width: 100%;
   	overflow: scroll;
-	background-repeat: no-repeat;
-	background-size: cover contain;
-	background-position: center;
 }
 
 h1{
@@ -47,9 +41,6 @@ h1{
 	height: 480px;
 	box-shadow: 0 10px 10px -5px black;
 	font-size: 0;
-	position: relative;
-	background-image: url();
-	background-size: cover;
 }
 .box{
 	width: 12.5%;
@@ -247,10 +238,10 @@ h1{
 }
 
 .box:nth-child(n+1):nth-child(-n+16){
-	color: snow;
+	color: DCF2F8;
 }
 .box:nth-child(n+41):nth-child(-n+64){
-	color: 29100E;
+	color: E53F1D;
 }
 
 
@@ -396,20 +387,24 @@ from {
 @media only screen and (max-height: 420px) {
 	h1 {
 		display: none;
+		
 	}
 	body {
-		overflow: hidden;
+	margin-top: -50px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
 	}
 	.box {
-		font-size: 34px;
+		font-size: 30px;
 		text-align: center;
 }
 	.box:nth-child(n+1):nth-child(-n+8){
-		padding-top: 4px;
+		padding-top: 3px;
 }
 	.board {
-		max-width: 320px;
-		max-height: 320px;
+		width: 320px;
+		height: 320px;
 }
 @keyframes pawn1move {
 	from {
@@ -421,7 +416,7 @@ from {
 	}
 	to {
 	position: relative;
-	top: 4.6rem;
+	top: 4.4rem;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -437,7 +432,7 @@ from {
 	}
 	to {
 	position: relative;
-	top: -4.7rem;
+	top: -4.3rem;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -458,7 +453,7 @@ from {
 	right: 0;
 	bottom: 0rem;
 	left: 0;
-	transform: translate(300%, 119px);
+	transform: translate(300%, 112px);
 	}
 }
 @keyframes pawn4move {
@@ -471,7 +466,7 @@ from {
 	}
 	to {
 	position: relative;
-	top: -2.5rem;
+	top: -2.2rem;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -490,16 +485,16 @@ from {
 	position: relative;
 	top: 0rem;
 	right: 0rem;
-	bottom: 5rem;
+	bottom: 0rem;
 	left: 0;
-	transform: translate(-200%, 80px);
+	transform: translate(-200%, 75px);
 	}
 	100% {
 	position: relative;
-	top: 14rem;
+	top: 13.05rem;
 	right: 0rem;
 	bottom: 0;
-	left: -4.7rem;
+	left: -4.35rem;
 	transform: translate(0, 0);
 	background: transparent;
 	}
@@ -515,11 +510,11 @@ from {
 	}
 	to {
 	position: relative;
-	top: -2.4rem;
+	top: -2.2rem;
 	right: 0;
 	bottom: 0rem;
 	left: 0;
-	transform: translate(80px, -100%);
+	transform: translate(73px, -100%);
 	background: none;
 	}
 }
