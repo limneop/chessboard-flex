@@ -24,7 +24,18 @@ h1{
 	position: relative;
 	top: 4rem;
 }
-
+h2 {
+	font-size: 2rem;
+	text-shadow: 0 2px 3px black;
+    color: white;
+	position: relative;
+	top: 4rem;
+	right: 9rem;
+	margin: 0px 0px;
+}
+#king {
+	color: 466A82;
+}
 .board{
 	position: relative;
 	top: 5rem;
@@ -98,6 +109,39 @@ h1{
 	left: 0;
 	}
 }
+
+#king {
+	animation-name: king1;
+	animation-duration: 21s;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+}
+@keyframes king1 {
+	0% {
+		color: 466A82;
+	}
+	10% {
+		color: E53F1D;
+	}
+	20% {
+		color: 466A82;
+	}
+	40% {
+		color: E53F1D;
+	}
+	50% {
+		color: 466A82;
+	}
+	70% {
+		color: E53F1D;
+	}
+	73% {
+		color: 466A82;
+	}
+	100% {
+		color: 466A82;;
+	}
+} 
 
 #move5 {
 	animation-name: pawn5move;
@@ -238,7 +282,7 @@ h1{
 }
 
 .box:nth-child(n+1):nth-child(-n+16){
-	color: DCF2F8;
+	color: 466A82;
 }
 .box:nth-child(n+41):nth-child(-n+64){
 	color: E53F1D;
@@ -259,6 +303,15 @@ h1{
 @media only screen and (max-width: 420px){
 	body {
 		overflow: hidden;
+	}
+	h2 {
+		font-size: 1.8rem;
+		text-shadow: 0 2px 3px black;
+		color: white;
+		position: relative;
+		top: 4rem;
+		right: 6rem;
+		margin: 0px 0px;
 	}
 	.box {
 		font-size: 34px;
@@ -387,7 +440,15 @@ from {
 @media only screen and (max-height: 420px) {
 	h1 {
 		display: none;
-		
+	}
+	h2 {
+		font-size: 1.3rem;
+		text-shadow: 0 2px 3px black;
+		color: white;
+		position: relative;
+		top: 5.5rem;
+		right: 6.3rem;
+		margin: 0px 0px;
 	}
 	body {
 	margin-top: -50px;
